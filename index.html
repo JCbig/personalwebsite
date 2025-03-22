@@ -1,39 +1,306 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>欢迎访问 - aipay.it.com</title>
+    <title>AIPay - AI Solutions for Payment Companies</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="nav-container">
         <div class="container">
-            <h1>欢迎来到 aipay.it.com</h1>
-            <p>我的个人网站</p>
+            <div class="flex-nav">
+                <div class="logo">
+                    <h1>AIPay</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#platform">Platform</a></li>
+                        <li><a href="#use-cases">Industry Solutions</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                    <a href="#demo" class="btn btn-primary">Request Demo</a>
+                </div>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <main class="container">
-        <section class="content">
-            <h2>关于我</h2>
-            <p>这是我的个人网站，用于展示我的项目和想法。</p>
-            
-            <h2>联系方式</h2>
-            <p>您可以通过以下方式联系我：</p>
-            <ul>
-                <li>邮箱：your.email@example.com</li>
-                <li>社交媒体：@your_handle</li>
-            </ul>
+    <div id="fullpage-container">
+        <!-- Hero Section -->
+        <section id="hero" class="section header-section">
+            <div class="hero-bg">
+                <!-- Background shapes will be created by JS -->
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="fade-in">
+                        <div class="dynamic-headline">
+                            <span class="text-gradient">AI-Powered</span>
+                            <div class="rotating-words">
+                                <span>Payment Security</span>
+                                <span>Fraud Prevention</span>
+                                <span>Revenue Optimization</span>
+                            </div>
+                        </div>
+                    </h2>
+                    <p class="fade-in">AIPay provides comprehensive AI solutions that help payment companies enhance processing capabilities, reduce fraud, and optimize operations.</p>
+                    <div class="hero-cta fade-in">
+                        <a href="#platform" class="btn btn-primary">Explore Solutions</a>
+                        <a href="#demo" class="btn btn-outline">Schedule Consultation</a>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 aipay.it.com - 保留所有权利</p>
-        </div>
-    </footer>
+        <!-- Solutions Section -->
+        <section id="solutions" class="section">
+            <div class="container">
+                <h2 class="fade-in">Comprehensive Solutions for Payment Companies</h2>
+                <p class="section-subtitle fade-in">We help payment providers overcome challenges and stay competitive with advanced AI technologies.</p>
+                
+                <div class="solution-cards fade-in">
+                    <div class="solution-card hover-3d">
+                        <div class="icon icon-shine"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Advanced Fraud Prevention</h3>
+                        <p>Implement next-generation fraud detection systems that evolve with emerging threats, reducing false positives by up to 65%.</p>
+                        <a href="#fraud-prevention" class="learn-more">Learn more</a>
+                    </div>
+                    
+                    <div class="solution-card hover-3d">
+                        <div class="icon icon-shine"><i class="fas fa-coins"></i></div>
+                        <h3>Payment Optimization</h3>
+                        <p>Maximize approval rates and minimize processing costs with intelligent routing and retry logic tailored to your business model.</p>
+                        <a href="#payment-optimization" class="learn-more">Learn more</a>
+                    </div>
+                    
+                    <div class="solution-card hover-3d">
+                        <div class="icon icon-shine"><i class="fas fa-chart-line"></i></div>
+                        <h3>Business Intelligence</h3>
+                        <p>Transform transaction data into actionable insights with AI-powered analytics that reveal hidden opportunities and risks.</p>
+                        <a href="#business-intelligence" class="learn-more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform Section -->
+        <section id="platform" class="section">
+            <div class="container">
+                <div class="platform-content">
+                    <h2 class="fade-in">The AIPay Platform for Payment Providers</h2>
+                    <p class="section-subtitle fade-in">Our comprehensive suite of AI tools integrates seamlessly with your existing payment infrastructure to enhance capabilities and performance.</p>
+                    
+                    <div class="platform-features fade-in">
+                        <div class="feature">
+                            <h3>Integration & Compatibility</h3>
+                            <p>Connect to over 200 payment processors, gateways, and banking systems with our flexible API and pre-built connectors.</p>
+                            <a href="#integration" class="feature-link">Explore integration options →</a>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Risk Management Suite</h3>
+                            <p>Combine transaction monitoring, behavior analysis, and machine learning to create a multi-layered defense against payment fraud.</p>
+                            <a href="#risk-management" class="feature-link">Discover risk tools →</a>
+                        </div>
+                        
+                        <div class="feature">
+                            <h3>Performance Dashboard</h3>
+                            <p>Monitor key metrics, visualize payment flows, and identify optimization opportunities through our intuitive dashboard.</p>
+                            <a href="#dashboard" class="feature-link">See dashboard features →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="section">
+            <div class="container">
+                <h2 class="fade-in">Our Real Results</h2>
+                <div class="stats-grid fade-in">
+                    <div class="stat-item">
+                        <div class="counter" data-target="87" data-duration="2000">0</div>
+                        <div class="stat-title">Fraud Detection Accuracy</div>
+                        <div class="stat-unit">%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="counter" data-target="200" data-duration="2000">0</div>
+                        <div class="stat-title">Supported Payment Systems</div>
+                        <div class="stat-unit">+</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="counter" data-target="45" data-duration="2000">0</div>
+                        <div class="stat-title">False Positive Reduction</div>
+                        <div class="stat-unit">%</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="counter" data-target="12" data-duration="2000">0</div>
+                        <div class="stat-title">Authorization Rate Increase</div>
+                        <div class="stat-unit">%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="section">
+            <div class="container">
+                <h2 class="fade-in">Specialized Solutions by Payment Segment</h2>
+                <div class="use-case-grid fade-in">
+                    <div class="use-case-item hover-3d">
+                        <div class="use-case-icon"><i class="fas fa-credit-card"></i></div>
+                        <h3>Payment Processors</h3>
+                        <p>Enhance transaction throughput and reduce operational costs with AI-powered processing optimization.</p>
+                    </div>
+                    
+                    <div class="use-case-item hover-3d">
+                        <div class="use-case-icon"><i class="fas fa-store"></i></div>
+                        <h3>Payment Gateways</h3>
+                        <p>Increase conversion rates and merchant satisfaction with smarter routing and recovery strategies.</p>
+                    </div>
+                    
+                    <div class="use-case-item hover-3d">
+                        <div class="use-case-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Cross-Border Payments</h3>
+                        <p>Optimize international transactions with intelligent FX management and compliance automation.</p>
+                    </div>
+                    
+                    <div class="use-case-item hover-3d">
+                        <div class="use-case-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Mobile Payment Providers</h3>
+                        <p>Enhance user experience and security with behavioral biometrics and contextual authentication.</p>
+                    </div>
+                    
+                    <div class="use-case-item hover-3d">
+                        <div class="use-case-icon"><i class="fas fa-university"></i></div>
+                        <h3>Banking Payment Services</h3>
+                        <p>Modernize payment infrastructure while maintaining compliance and security standards.</p>
+                    </div>
+                    
+                    <div class="use-case-item hover-3d">
+                        <div class="use-case-icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <h3>Alternative Payment Methods</h3>
+                        <p>Integrate and optimize emerging payment technologies with your existing infrastructure.</p>
+                    </div>
+                </div>
+                <div class="use-case-cta fade-in">
+                    <a href="#industry-solutions" class="btn btn-primary">Explore Industry Solutions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="fade-in">How Payment Companies Succeed with AIPay</h2>
+                <div class="testimonial-grid fade-in">
+                    <div class="testimonial-item">
+                        <div class="quote">"AIPay's fraud detection system helped us reduce chargebacks by <strong>78%</strong> while decreasing false positives by <strong>35%</strong>, significantly improving our merchant relationships."</div>
+                        <div class="attribution">- CTO, Global Payment Processor</div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="quote">"Their payment optimization engine improved our authorization rates by <strong>12.5%</strong>, representing millions in additional revenue for our business and our merchants."</div>
+                        <div class="attribution">- VP of Operations, Regional Payment Gateway</div>
+                    </div>
+                    
+                    <div class="testimonial-item">
+                        <div class="quote">"Implementing AIPay's analytics platform revealed optimization opportunities that have saved us <strong>$1.2M annually</strong> in processing costs while improving overall system performance."</div>
+                        <div class="attribution">- CFO, Digital Banking Payment Service</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="fade-in">Ready to Transform Your Payment Operations?</h2>
+                <p class="fade-in">Let's discuss how AIPay can help your payment company achieve better results through AI-powered solutions.</p>
+                <div class="cta-buttons fade-in">
+                    <a href="#contact-form" class="btn btn-primary">Talk to an Expert</a>
+                    <a href="#demo" class="btn btn-outline">Request Solution Demo</a>
+                </div>
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@aipay.example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section id="footer" class="section">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-logo">
+                        <h2>AIPay</h2>
+                        <p>AI-powered solutions for payment companies</p>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <div class="link-group">
+                            <h3>Solutions</h3>
+                            <ul>
+                                <li><a href="#fraud-prevention">Fraud Prevention</a></li>
+                                <li><a href="#payment-optimization">Payment Optimization</a></li>
+                                <li><a href="#business-intelligence">Business Intelligence</a></li>
+                                <li><a href="#compliance">Compliance & Reporting</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#careers">Careers</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#press">Press</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="link-group">
+                            <h3>Resources</h3>
+                            <ul>
+                                <li><a href="#documentation">Documentation</a></li>
+                                <li><a href="#api">API Reference</a></li>
+                                <li><a href="#case-studies">Case Studies</a></li>
+                                <li><a href="#webinars">Webinars</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p class="footer-copyright">&copy; 2024 AIPay. All rights reserved.</p>
+                    <div class="legal-links">
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#security">Security</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="scroll-indicator"></div>
+    <div class="section-indicator">
+        <!-- Section dots will be created by JS -->
+    </div>
+    <div class="cursor-glow"></div>
 
     <script src="js/main.js"></script>
 </body>
